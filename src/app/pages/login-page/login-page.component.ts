@@ -23,6 +23,10 @@ export class LoginPageComponent implements OnInit {
   }
 
   async login() {
+    this.config.router.navigateByUrl('/advert')
+    //
+    return;
+    /*
     if (this.user.phone == 'moon' && this.user.password == 'moon') {
       this.config.admin = { username: 'moon', password: 'moon' };
       this.config.router.navigateByUrl('/admin')
@@ -35,6 +39,7 @@ export class LoginPageComponent implements OnInit {
         alert('用户名或密码不存在');
       }
     }
+    */
   }
 
   checkAdminLogin() {
